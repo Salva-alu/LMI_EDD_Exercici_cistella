@@ -134,5 +134,21 @@ function iniciarAplicacio() {
     } while (ordre !== 'exit');
 }
 
+//funcio agregar formulari
+
+document.addEventListener("DOMContentLoaded", function () {
+function agregar() {
+    document.querySelector("#taula tbody").insertAdjacentHTML(
+        "beforeend",
+        `<tr>
+            <td>${document.querySelector("#desc").value}</td>
+            <td>${document.querySelector("#preu").value}</td>
+            <td>${document.querySelector("#quantitat").value}</td>
+            <td>${document.querySelector("#preu").value * document.querySelector("#quantitat").value}</td>
+        </tr>`
+    );
+}
+
+
 // Iniciar l'aplicació
 iniciarAplicacio();

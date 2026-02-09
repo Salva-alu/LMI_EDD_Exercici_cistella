@@ -15,7 +15,7 @@
         <input type="number" id="preu" step="0.01" required>
         <label for="quantitat">Quantitat:</label>
         <input type="number" id="quantitat" required>
-        <button type="button" id="afegir">Afig producte</button>
+        <button type="button" id="afegir" onclick="agregar()">Afig producte</button>
     </form>
     <table id="taula">
         <thead>
@@ -28,6 +28,7 @@
         </thead>
         <tbody>
             <!-- Les files es generaran dinàmicament -->
+             <!-- document.queryselector("#id").value  Number.parseFloat(document.queryselector("#id").value -->
         </tbody>
         <tfoot>
             <tr>
